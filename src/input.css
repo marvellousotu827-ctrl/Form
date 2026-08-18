@@ -1,0 +1,28 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap");
+@import "tailwindcss";
+
+@theme {
+  /* Background gradient */
+  --color-bg-start: #1e6f5c;
+  --color-bg-end: #2d8a73;
+
+  /* Card */
+  --color-surface: #ffffff;
+
+  /* Accent */
+  --color-primary: #2d8a73;
+  --color-primary-hover: #236d5b;
+
+  /* Text */
+  --color-text-primary: #1f2937;
+  --color-text-secondary: #6b7280;
+  /* --color-text-font: "Poppins"; */
+
+  /* Inputs */
+  --color-input: #f8fafc;
+  --color-border: #e5e7eb;
+
+  /* States */
+  --color-error: #ef4444;
+  --color-success: #22c55e;
+}

@@ -1,0 +1,60 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="style.css" />
+    <title>FocusDesk</title>
+  </head>
+
+  <body
+    class="bg-linear-180 from-bg-start to-bg-end min-h-screen grid place-content-center font-[poppins]"
+  >
+    <main>
+      <div
+        class="border-2 border-solid border-border p-8 rounded-lg h-max w-[65vw] flex flex-col justify-center bg-surface items-start shadow-2xl pb-20"
+      >
+        <div class="w-full flex items-center justify-center flex-col">
+          <img src="../Assets/download.jfif" alt="Logo" class="inline-block" />
+
+          <h1
+            class="font-[poppins] font-semibold p-8 pt-0 inline-flex justify-self-center self-center"
+          >
+            Welcome Back!
+          </h1>
+        </div>
+
+        <form class="w-full" action="">
+          <div class="flex flex-col items-start justify-center w-full mb-6">
+            <label class="text-sm" for="name">Email : </label>
+            <input
+              class="bg-input border border-border p-2 rounded-md focus:outline-primary w-full shadow-md focus:outline-2"
+              type="email"
+              name="name"
+              id="name"
+            />
+          </div>
+
+          <div class="flex flex-col items-start justify-start w-full mb-6">
+            <label class="text-sm" for="name">Password : </label>
+            <input
+              class="bg-input border border-border p-2 rounded-md active:outline-none w-full shadow-md focus:outline-primary focus:outline-2"
+              type="password"
+              name="password"
+              id="password"
+            />
+          </div>
+
+          <div class="flex items-center justify-center w-full mt-8">
+            <button
+              type="submit"
+              class="bg-primary p-2.5 w-[70%] rounded-lg hover:bg-primary-hover text-surface focus:outline-primary-hover"
+            >
+              Sign In
+            </button>
+          </div>
+        </form>
+      </div>
+    </main>
+  </body>
+</html>
