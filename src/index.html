@@ -8,11 +8,11 @@
   </head>
 
   <body
-    class="bg-linear-180 from-bg-start to-bg-end min-h-screen grid place-content-center font-[poppins]"
+    class="bg-linear-45 from-bg-start to-bg-end min-h-screen font-[poppins] w-full"
   >
-    <main>
+    <main class="p-4">
       <div
-        class="border-2 border-solid border-border p-8 rounded-lg h-max w-[65vw] flex flex-col justify-center bg-surface items-start shadow-2xl pb-20"
+        class="border-2 border-solid border-border p-8 rounded-lg h-max w-min-80% flex flex-col justify-center bg-surface items-start shadow-2xl"
       >
         <div class="w-full flex items-center justify-center flex-col">
           <img src="../Assets/download.jfif" alt="Logo" class="inline-block" />
@@ -28,27 +28,29 @@
           <div class="flex flex-col items-start justify-center w-full mb-6">
             <label class="text-sm" for="name">Email : </label>
             <input
-              class="bg-input border border-border p-2 rounded-md focus:outline-primary w-full shadow-md focus:outline-2"
+              class="bg-input border border-border p-2 rounded-md focus:outline-primary w-full shadow-md focus:outline-2 placeholder:text-text-secondary placeholder:text-sm"
               type="email"
               name="name"
               id="name"
+              placeholder="Enter Email"
             />
           </div>
 
           <div class="flex flex-col items-start justify-start w-full mb-6">
             <label class="text-sm" for="name">Password : </label>
             <input
-              class="bg-input border border-border p-2 rounded-md active:outline-none w-full shadow-md focus:outline-primary focus:outline-2"
+              class="bg-input border border-border p-2 rounded-md active:outline-none w-full shadow-md focus:outline-primary focus:outline-2 placeholder:text-text-secondary placeholder:text-sm"
               type="password"
               name="password"
               id="password"
+              placeholder="Enter Password"
             />
           </div>
 
           <div class="flex items-center justify-center w-full mt-8">
             <button
               type="submit"
-              class="bg-primary p-2.5 w-[70%] rounded-lg hover:bg-primary-hover text-surface focus:outline-primary-hover"
+              class="bg-primary p-2.5 w-[70%] rounded-lg hover:bg-primary-hover text-surface focus:outline-primary-hover cursor-pointer"
             >
               Sign In
             </button>
