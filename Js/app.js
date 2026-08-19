@@ -1,6 +1,6 @@
 const form = document.getElementById("loginForm");
 const email = document.getElementById("email");
-const passsword = document.getElementById("password");
+const password = document.getElementById("password");
 
 // Listen and prevent default reloading
 form.addEventListener("submit", (e) => {
@@ -29,19 +29,19 @@ form.addEventListener("submit", (e) => {
 
   // Validate Password
 
-  if (passsword.value.length < 8) {
+  if (password.value.length < 8) {
     document.getElementById("passErr").textContent =
       "A minimun of 8 characters is required!";
-    passsword.classList.add("emailBad");
-    passsword.classList.remove("emailGood");
+    password.classList.add("emailBad");
+    password.classList.remove("emailGood");
   } else if (!passwordRegex.test(passsword.value)) {
     document.getElementById("passErr").textContent =
       "This pattern requires at least one lowercase letter, one uppercase letter, one number, one special character, and a minimum length of 8 characters";
-    passsword.classList.add("emailBad");
-    passsword.classList.remove("emailGood");
+    password.classList.add("emailBad");
+    password.classList.remove("emailGood");
   } else {
     document.getElementById("passErr").textContent = "✅";
-    passsword.classList.remove("emailBad");
-    passsword.classList.add("emailGood");
+    password.classList.remove("emailBad");
+    password.classList.add("emailGood");
   }
 });
