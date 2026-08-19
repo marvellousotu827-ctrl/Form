@@ -26,3 +26,11 @@
   --color-error: #ef4444;
   --color-success: #22c55e;
 }
+
+.emailBad {
+  border: 1px solid var(--color-error);
+}
+
+.emailGood {
+  border: 1px solid var(--color-success);
+}

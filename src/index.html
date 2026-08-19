@@ -5,6 +5,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <link rel="stylesheet" href="style.css" />
     <title>FocusDesk</title>
+    <script defer src="../Js/app.js "></script>
   </head>
 
   <body
@@ -12,7 +13,7 @@
   >
     <main class="p-4 flex flex-col justify-center h-screen">
       <div
-        class="border-2 border-solid border-border p-8 rounded-lg h-max flex flex-col justify-center bg-surface items-start shadow-2xl"
+        class="border-2 border-solid border-border p-4 rounded-lg h-max flex flex-col justify-center bg-surface items-start shadow-2xl"
       >
         <div class="w-full flex items-center justify-center flex-col">
           <img
@@ -28,33 +29,41 @@
           </h1>
         </div>
 
-        <form class="w-full" action="">
-          <div class="flex flex-col items-start justify-center w-full mb-6">
-            <label class="text-sm" for="name">Email : </label>
+        <form class="w-full pb-8 h-max" action="" id="loginForm">
+          <div class="flex flex-col items-start justify-center w-full mb-2">
+            <label class="text-sm indent-2 mb-1" for="email">Email : </label>
             <input
-              class="bg-input border border-border p-2 rounded-md focus:outline-primary w-full shadow-md focus:outline-2 placeholder:text-text-secondary placeholder:text-sm"
-              type="email"
+              class="bg-input border border-border p-2 rounded-md focus:outline-primary w-full shadow-md focus:outline-2 placeholder:text-text-secondary placeholder:text-sm text-sm text-text-primary"
+              type="text"
               name="name"
-              id="name"
+              id="email"
               placeholder="Enter Email"
+              autocomplete="true"
             />
+            <small
+              class="min-h-4 text-red-800 text-start"
+              id="emailErr"
+            ></small>
           </div>
 
           <div class="flex flex-col items-start justify-start w-full mb-6">
-            <label class="text-sm" for="name">Password : </label>
+            <label class="text-sm indent-2 mb-1" for="password"
+              >Password :
+            </label>
             <input
-              class="bg-input border border-border p-2 rounded-md active:outline-none w-full shadow-md focus:outline-primary focus:outline-2 placeholder:text-text-secondary placeholder:text-sm"
-              type="password"
+              class="bg-input border border-border p-2 rounded-md active:outline-none w-full shadow-md focus:outline-primary focus:outline-2 placeholder:text-text-secondary placeholder:text-sm text-sm text-text-primary"
+              type="text"
               name="password"
               id="password"
               placeholder="Enter Password"
             />
+            <small class="min-h-4 text-red-800 text-start" id="passErr"></small>
           </div>
 
           <div class="flex items-center justify-center w-full mt-8">
             <button
               type="submit"
-              class="bg-primary p-2.5 w-[70%] rounded-lg hover:bg-primary-hover text-surface focus:outline-primary-hover cursor-pointer"
+              class="bg-primary p-2.5 w-[70%] rounded-lg hover:bg-primary-hover text-surface focus:outline-primary-hover cursor-pointer focus:-translate-y-1.5 transition-transform duration-500 ease-in-out hover:shadow-md shadow-primary"
             >
               Sign In
             </button>
